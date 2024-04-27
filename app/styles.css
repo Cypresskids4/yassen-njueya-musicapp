@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --dark-green: #002626;
+    --midnight-green: #0e4749;
+    --yellow-green: #95c623;
+    --persimmon: #e55812;
+    --alabaster: #efe7da;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    background-color: var(--midnight-green);
+    color:var(--persimmon) ;
+
+}
+.nav-title{
+    font-family: Lobster Two;
+}
+.nav-logo{
+    height: 7vh;
+    margin-left: 2vmin;
+}
+
+.nav-link{
+    font-family: Space Grotesk;
+    margin-right: 2vmin;
+    text-decoration: none;
+    color: var(--alabaster);
+}
+
+.nav-link{
+    margin-right: 2vmin;
+    text-decoration: none;
+    color: var(--yellow-green);
+    font-size: 3.5vmin;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    scale: 0.98;
+}
+
+.body-content{
+    width:100%;
+    height:fit-content;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.25turn, var(--yellow-green), var(--midnight-green), var(--yellow-green));
+}
+
+.footer{
+    background-color: black;
+    height: fit-content;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-grid{
+    margin-bottom: 10vh;
+    width: 60%;
+    height: 60vh;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--yellow-green);
+}  
+
+.lyric{
+    font-size: 2vmin;
+    text-align: center;
+    color: var(--dark-green);
+    margin-top: 2vmin;;
+
+
+}
+
+.image-box{
+    width:100%;
+    height:100%;
+    max-height:60vh;
+    position: relative;
+    left: 0;
+    top: 0;
+
+}
+
+.music-info-box{
+    width: 100%;
+    height: 100%;
+    max-height: 60vh;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.music-image{
+    width: 45vmin;
+    height: 45vmin;
+    transform: 0.5 ease;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+
+}
+
+.music-image:hover{
+    filter: brightness(50%);
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+.song-name{
+    font-size:6vmin;
+    color:var(--dark-green);
+    text-align: center;
+    line-height: 80%;
+    margin-bottom: 2vmin;
+}
+
+.music-supp-text{
+    font-size: 4vmin;
+    text-align: center;
+    color:var(--dark-green);
+}
+
+.artist-name{
+    font-size: 5vmin;
+    color: var(--dark-green);
+    text-align: center;
+}
+
+.album{
+    color:var(--dark-green);
+    font-size: 5vmin;
+    text-align: center;
+}
+.play-button{
+    width: 40vmin;
+    height: 40vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+}
